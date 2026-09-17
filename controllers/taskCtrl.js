@@ -1,5 +1,7 @@
 const Task = require('../models/task');
 const Campaign = require('../models/campaign');
+const CampaignRequest = require('../models/campaignRequest');
+const Staff = require('../models/staff');
 
 // Keeps a campaign's status in sync with its own task count only - never
 // touches 'completed', since that's a manual, staff-driven terminal state.
@@ -58,6 +60,25 @@ const createTask = async (req, res) => {
         // assign the task to themselves
         if (req.user.role === "staff" && !taskData.assignedTo) {
             taskData.assignedTo = req.user._id;
+        }
+
+        // If a client creates a task without specifying assignedTo,
+        // auto-assign to the staff member whose specialty matches the campaign type
+        if (req.user.role === "client" && !taskData.assignedTo) {
+            try {
+                const populatedCampaign = await Campaign.findById(taskData.campaignId).populate('requestId');
+                if (populatedCampaign?.requestId?.campaignType) {
+                    const matchingStaff = await Staff.findOne({
+                        specialty: populatedCampaign.requestId.campaignType
+                    });
+                    if (matchingStaff) {
+                        taskData.assignedTo = matchingStaff.userId;
+                    }
+                }
+            } catch (lookupErr) {
+                console.warn('Auto-assign staff lookup failed:', lookupErr.message);
+                // Non-fatal: task still creates, just unassigned
+            }
         }
 
         const task = await Task.create(taskData);
