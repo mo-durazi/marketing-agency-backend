@@ -1,9 +1,5 @@
 <div align="center">
-
   <img src="./images/assets/markaura-logo.svg" alt="MarkAura logo" width="240" />
-
-  <img src="./images/logo.svg" alt="MarkAura logo" width="240" />
-
 </div>
 
 <h1 align="center">MarkAura</h1>
@@ -33,11 +29,6 @@ This repository contains the **React client** for MarkAura. The API is a separat
 | API | [Render](https://render.com) | <!-- add the live Render URL here --> |
 | Database | [MongoDB Atlas](https://www.mongodb.com/atlas) |  |
 
-![MarkAura Landing Page](/images/landingpage.jpeg)
-
-
-</div>
-
 ## Description
 
 MarkAura is a marketing agency management platform that manages the full lifecycle of a campaign from a client's initial request, through planning and execution by agency staff, to coordination with outsourced partners. Instead of managing this back-and-forth over emails and spreadsheets, MarkAura gives each party (clients, agency staff, and outsource partners) a role-based view of exactly what they need to act on next: clients submit and track campaign requests, staff review requests and manage active campaigns, and outsource agencies handle delegated tasks, all through a single, status-driven workflow.
@@ -60,29 +51,17 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to view and update my company profile, so that my contact and industry information stays accurate.
 
 <p align="center">
-
   <img src="./images/assets/register.png" alt="Client registration form" width="500" /><br/>
-
-  <img src="./images/register.png" alt="Client registration form" width="500" /><br/>
-
   <sub>Registration form</sub>
 </p>
 
 <p align="center">
-
   <img src="./images/assets/client-dash.png" alt="Client dashboard" width="500" /><br/>
-
-  <img src="./images/client-dash.png" alt="Client dashboard" width="500" /><br/>
-
   <sub>Client dashboard after signing in</sub>
 </p>
 
 <p align="center">
-
   <img src="./images/assets/account.png" alt="Client company profile page" width="500" /><br/>
-
-  <img src="./images/account.png" alt="Client company profile page" width="500" /><br/>
-
   <sub>Company profile page</sub>
 </p>
 
@@ -92,11 +71,7 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to delete a request I submitted, so that I'm not committed to a campaign I no longer need if it hasn't been accepted yet.
 
 <p align="center">
-
   <img src="./images/assets/new-camp-req.png" alt="New campaign request form" width="500" /><br/>
-
-  <img src="./images/new-camp-req.png" alt="New campaign request form" width="500" /><br/>
-
   <sub>New campaign request form</sub>
 </p>
 
@@ -105,20 +80,12 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to view the details of a specific request, so that I can review exactly what I submitted.
 
 <p align="center">
-
   <img src="./images/assets/camp-req.png" alt="My Campaign Requests table" width="500" /><br/>
-
-  <img src="./images/camp-req.png" alt="My Campaign Requests table" width="500" /><br/>
-
   <sub>My Campaign Requests table</sub>
 </p>
 
 <p align="center">
-
   <img src="./images/assets/req-details.png" alt="Campaign request detail page" width="500" /><br/>
-
-  <img src="./images/req-details.png" alt="Campaign request detail page" width="500" /><br/>
-
   <sub>Campaign request detail page</sub>
 </p>
 
@@ -128,20 +95,12 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to see the tasks currently being worked on for my campaign, so that I know what's actively being done.
 
 <p align="center">
-
   <img src="./images/assets/camps.png" alt="My Campaigns table" width="500" /><br/>
-
-  <img src="./images/camps.png" alt="My Campaigns table" width="500" /><br/>
-
   <sub>My Campaigns table</sub>
 </p>
 
 <p align="center">
-
   <img src="./images/assets/camp-details.png" alt="Campaign detail page with tasks" width="500" /><br/>
-
-  <img src="./images/camp-details.png" alt="Campaign detail page with tasks" width="500" /><br/>
-
   <sub>Campaign detail page with tasks</sub>
 </p>
 
