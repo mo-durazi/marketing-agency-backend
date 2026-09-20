@@ -9,7 +9,7 @@
 <h1 align="center">MarkAura</h1>
 
 <p align="center">
-  A role-based marketing agency management platform from campaign request, to execution, to delivery.
+  A role-based marketing agency management platform from campaign request, to execution, to delivery .
 </p>
 
 <div align="center">
