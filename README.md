@@ -1,16 +1,40 @@
 <div align="center">
+
+  <img src="./images/assets/markaura-logo.svg" alt="MarkAura logo" width="240" />
+
   <img src="./images/logo.svg" alt="MarkAura logo" width="240" />
+
 </div>
 
 <h1 align="center">MarkAura</h1>
 
 <p align="center">
-  A role-based marketing agency management platform from campaign request, to execution, to delivery.
+  A role-based marketing agency management platform from campaign request, to execution, to delivery .
 </p>
 
 <div align="center">
 
+
+![MarkAura Landing Page](./images/assets/landingpage.jpeg)
+
+</div>
+
+## Description
+
+MarkAura is a marketing agency management platform that manages the full lifecycle of a campaign from a client's initial request, through planning and execution by agency staff, to coordination with outsourced partners. Instead of managing this back-and-forth over emails and spreadsheets, MarkAura gives each party (clients, agency staff, and outsource partners) a role-based view of exactly what they need to act on next: clients submit and track campaign requests, staff review requests and manage active campaigns, and outsource agencies handle delegated tasks, all through a single, status-driven workflow.
+
+This repository contains the **React client** for MarkAura. The API is a separate Node/Express app; see [`marketing-agency-frontend`](https://github.com/mo-durazi/marketing-agency-frontend).
+
+## Deployment
+
+| Service | Platform | Link |
+|---|---|---|
+| Client (this repo) | [Vercel](https://vercel.com) | [marketing-agency-frontend-theta.vercel.app](https://marketing-agency-frontend-theta.vercel.app/) |
+| API | [Render](https://render.com) | <!-- add the live Render URL here --> |
+| Database | [MongoDB Atlas](https://www.mongodb.com/atlas) |  |
+
 ![MarkAura Landing Page](/images/landingpage.jpeg)
+
 
 </div>
 
@@ -36,17 +60,29 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to view and update my company profile, so that my contact and industry information stays accurate.
 
 <p align="center">
+
+  <img src="./images/assets/register.png" alt="Client registration form" width="500" /><br/>
+
   <img src="./images/register.png" alt="Client registration form" width="500" /><br/>
+
   <sub>Registration form</sub>
 </p>
 
 <p align="center">
+
+  <img src="./images/assets/client-dash.png" alt="Client dashboard" width="500" /><br/>
+
   <img src="./images/client-dash.png" alt="Client dashboard" width="500" /><br/>
+
   <sub>Client dashboard after signing in</sub>
 </p>
 
 <p align="center">
+
+  <img src="./images/assets/account.png" alt="Client company profile page" width="500" /><br/>
+
   <img src="./images/account.png" alt="Client company profile page" width="500" /><br/>
+
   <sub>Company profile page</sub>
 </p>
 
@@ -56,7 +92,11 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to delete a request I submitted, so that I'm not committed to a campaign I no longer need if it hasn't been accepted yet.
 
 <p align="center">
+
+  <img src="./images/assets/new-camp-req.png" alt="New campaign request form" width="500" /><br/>
+
   <img src="./images/new-camp-req.png" alt="New campaign request form" width="500" /><br/>
+
   <sub>New campaign request form</sub>
 </p>
 
@@ -65,12 +105,20 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to view the details of a specific request, so that I can review exactly what I submitted.
 
 <p align="center">
+
+  <img src="./images/assets/camp-req.png" alt="My Campaign Requests table" width="500" /><br/>
+
   <img src="./images/camp-req.png" alt="My Campaign Requests table" width="500" /><br/>
+
   <sub>My Campaign Requests table</sub>
 </p>
 
 <p align="center">
+
+  <img src="./images/assets/req-details.png" alt="Campaign request detail page" width="500" /><br/>
+
   <img src="./images/req-details.png" alt="Campaign request detail page" width="500" /><br/>
+
   <sub>Campaign request detail page</sub>
 </p>
 
@@ -80,12 +128,20 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I want to see the tasks currently being worked on for my campaign, so that I know what's actively being done.
 
 <p align="center">
+
+  <img src="./images/assets/camps.png" alt="My Campaigns table" width="500" /><br/>
+
   <img src="./images/camps.png" alt="My Campaigns table" width="500" /><br/>
+
   <sub>My Campaigns table</sub>
 </p>
 
 <p align="center">
+
+  <img src="./images/assets/camp-details.png" alt="Campaign detail page with tasks" width="500" /><br/>
+
   <img src="./images/camp-details.png" alt="Campaign detail page with tasks" width="500" /><br/>
+
   <sub>Campaign detail page with tasks</sub>
 </p>
 
@@ -94,22 +150,74 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 - As a client, I should not be able to change a request's or campaign's status myself, so that only agency staff can validate and move work through the pipeline.
 
 ### Agency staff
-1.  As an agency staff member, I want to view the dashboard so I can see current activities.
+1. As an agency staff member, I want to view the dasboard so I can see current activities.
 
-2.  As an agency staff member, I want to review client request so I can decide how to handle them.
+2. As an agency staff member, I want to review client campaign requests so I can decided how to handle them. 
 
-3. As an agency staff member, I want to manage campaigns so I can track their progress.
+3. As an agency staff member, I want to accept or reject campaign requests so I can manage incoming work.
 
-4.  As an agency staff member, I want to create and assign tasks so work is organized. 
+4. As an agency staff member, I want to manage campaigns so I can track their progress.
 
-5.  As an agency staff member, I want to assign work to external partners so they can complete specific tasks.
+5. As an agency staff member, I want to create and assign tasks so work is organized
 
-6. As an agency staff member, I want to review submitted work so I can approve it or request revisions. 
+6. As an agency staff member, I want to view assigned tasks so I can track the work that needs to be completed.
 
-7. As an agency staff member, I want to view client information so I can manage their campaigns.
+7. As an agency staff member, I want to update task status so I can keep the team informed about progress.
+
+8. As an agency staff member, I want to manage outsource requests so I can coordinate work with external partners.
+
+9. As an agency staff member, I want to view reports so I can monitor campaign performance.
+
+10. As an agency staff member, I want to view my profile so I can manage my account information.
+
+### Admin
+1. As an admin, I want to sign in securely, so that I can manage the platform's staff and outsource accounts.
+2. As an admin, I want to create a staff account with a specialty, so that they can be assigned campaign work in their area of expertise.
+3. As an admin, I want to create an outsource agency account with its service types, so that staff can delegate matching work to them.
+4. As an admin, I want to view a list of all staff and outsource accounts, so that I have a full picture of who's on the platform.
+5. As an admin, I want to view a single user's account and profile details, so that I can check or troubleshoot their information.
+6. As an admin, I want to edit a staff or outsource account's details (including specialty or service types), so that I can correct or update their information as roles change.
+7. As an admin, I want to delete a staff or outsource account, so that I can remove access once someone is no longer with the agency or partner.
+
+### Outsource partners
+
+**Account & Profile**
+- As an outsource partner, I want to sign in securely, so that I can access my assigned work and manage my agency profile.
+- As an outsource partner, I want to view and update my company profile and service types, so that agency staff know what I can deliver and whether I’m currently available.
+- As an outsource partner, I want to update my availability status, so I can indicate when I’m open for new work.
+
+**Managing Assigned Tasks**
+- As an outsource partner, I want to see all tasks assigned to my agency, so that I can plan workload and deadlines.
+- As an outsource partner, I want to view task details, including campaign context, service type, due date, and payment, so that I understand the scope of the work.
+- As an outsource partner, I want to accept or reject a task, so that I can confirm whether I can complete it.
+- As an outsource partner, I want to update task progress and add notes, so that agency staff stay informed as work moves forward.
+- As an outsource partner, I want to see whether a task is pending, accepted, in progress, delivered, completed, or rejected, so that I can track the full lifecycle of each assignment.
+
+<p align="center">
+  <img src="./images/assets/outsoruceDashboard.png" alt="Outsource dashboard" width="500" /><br/>
+  <sub>Outsource dashboard overview</sub>
+</p>
+
+<p align="center">
+  <img src="./images/assets/outsourceTasks.png" alt="Outsource tasks page" width="500" /><br/>
+  <sub>Assigned tasks list</sub>
+</p>
+
+<p align="center">
+  <img src="./images/assets/outsourceProfile.png" alt="Outsource profile page" width="500" /><br/>
+  <sub>Outsource profile and service availability</sub>
+</p>
 
 
-8. As an agency staff member, I want to track campaign progress so I know what is completed and what is pending.
+<p align="center">
+  <img src="./images/assets/outsrouceTaskDetails.png" alt="Outsource task details page" width="500" /><br/>
+  <sub>Outsource task details page</sub>
+</p>
+
+<p align="center">
+  <img src="./images/assets/outsrouceTaskUpdate.png" alt="Outsource task update page" width="500" /><br/>
+  <sub>Outsource task update page</sub>
+</p>
 
 9. As an agency staff member, I want to create, view, edit and delete requests, campaigns, tasks and clients information.
 
@@ -138,8 +246,13 @@ This repository contains the **Node.js/Express API** for MarkAura. The client is
 9. As an outsource agency, I want to update the status of a task I've accepted (not started, in progress, finished, delivered), so that the agency can track my progress in real time.
 10. As an outsource agency, I want to pull a report of my previous tasks (including status, payment, and completion dates), so that I can track my work history and reconcile payments.
 
+<p align="center">
+  <img src="./images/assets/outsourceEditAccount.png" alt="Outsource Edit account page" width="500" /><br/>
+  <sub>Outsource Edit account page</sub>
+</p>
 
 ## Wireframes
+
 Check out the wireframes sketching out layout and flow of the app covering the screens for clients, agency staff, and outsource partners across the request → campaign → task lifecycle.
 
 ### Client WireFrames
@@ -161,6 +274,10 @@ Check out the wireframes sketching out layout and flow of the app covering the s
 ### Agent Staff WireFrames
 <div align="center">
 
+
+[Open Client wireframes in Excalidraw](https://excalidraw.com/#json=qT5Sfgg_m7Rd2KMgV_1AX,Vmgu_loLw0MozkdcNjXsGQ
+)
+
 [Open Agency Staff wireframes in Excalidraw](https://excalidraw.com/#json=V0PU0amix4BDnANgbY0Re,NuTEOwe1H88DcIIhvqFDLg)
 
 </div>
@@ -169,8 +286,13 @@ Check out the wireframes sketching out layout and flow of the app covering the s
 
 
 
+
+
+### Outsource Partners Wireframes
+
 ## ERD
 ![MarkAura ERD](/images/MarkAura_ERD.png)
+
 
 ## Technologies Used
 
@@ -195,16 +317,68 @@ Check out the wireframes sketching out layout and flow of the app covering the s
 - Render (API hosting)
 - MongoDB Atlas (database hosting)
 
+
+## Technologies Used
+
+**Client (this repo)**
+- React 19
+- React Router 8
+- Vite
+- ESLint
+- Plain CSS (custom design system — no CSS framework)
+
+**API**
+- Node.js
+- Express 5
+- MongoDB with Mongoose
+- JSON Web Tokens (`jsonwebtoken`) for authentication
+- `bcrypt` for password hashing
+
+**Tooling & Deployment**
+- Git & GitHub (feature branches + pull requests)
+- Vercel (client hosting)
+- Render (API hosting)
+- MongoDB Atlas (database hosting)
+
+## ERD
+![MarkAura ERD](images/assets/MarkAura_ERD.png)
+
 ## Routing Tables
 
-## Auth routes
+### Auth routes
+ 
+| Path | Component | Access | Notes |
+|---|---|---|---|
+| `/register` | `ClientSignUpForm` | public | Client sign-up (account + company info) |
+| `/sign-in` | `SignInForm` | public | Sign in |
+
+
+### Client routes
+ 
+| Path | Component | Access | Notes |
+|---|---|---|---|
+| `/` | `ClientDashboard` | client | Stat cards, requests/campaigns overview, recent activity |
+| `/requests` | `MyCampaignRequests` | client | Table of all submitted requests and their statuses |
+| `/requests/new` | `NewCampaignRequest` | client | Submit a new campaign request |
+| `/requests/:id` | `CampaignRequestDetails` | client (owner) | View a request's details; update/delete while still `submitted` |
+| `/requests/:id/edit` | `UpdateCampaignRequest` | client (owner, `submitted` only) | Edit a pending request |
+| `/campaigns` | `MyCampaignsPage` | client | Table of campaigns and their status (pending/in progress/completed) |
+| `/campaigns/:id` | `CampaignDetails` | client (owner) | Campaign details, including the tasks assigned to it |
+| `/profile` | `ClientProfilePage` | client | View/edit company profile |
+| `*` | `NotFoundPage` | public | Catch-all |
 
 | Method | Route | Access | Success | Errors | Notes |
 |---|---|---|---|---|---|
 | POST | `/auth/register` | public (client signup, incl. company fields) | `201 Created` | `400` invalid input · `409` username/email exists | Creates a `User` + `Client` profile in one call, this is the Register screen's "Create account" submit |
 | POST | `/auth/sign-in` | public | `200 OK` | `400` missing fields · `401` bad credentials | Returns a JWT; the client decodes it and stores it in `localStorage`, there is no separate session-restore or logout route, "signing out" just clears the stored token |
 
-## Client routes
+
+### Admin routes
+
+
+| Path | Component | Access | Notes |
+|---|---|---|---|
+| `/admin/users` | `AdminUserManagement` | admin | Create/view/edit/delete staff and outsource accounts; admins land here directly after signing in |
 
 | Method | Route | Access | Success | Errors | Notes |
 |---|---|---|---|---|---|
@@ -219,21 +393,48 @@ Check out the wireframes sketching out layout and flow of the app covering the s
 | GET | `/campaigns/:id` | client (owner) · staff/admin (any) · outsource (own only) | `200 OK` | `403` not authorized · `404` not found | Populates the Campaign Detail page |
 | GET | `/tasks/campaign/:campaignId` | client (owner) · staff/admin (any) · outsource (own only) | `200 OK` | `403` not authorized · `404` not found | Lists every task assigned to that campaign, shown on the Campaign Detail page |
 
+
 ### Agency staff routes
-| Method | Path | Purpose |
-|--------|------|---------|
-| GET | `/campaign-requests` | Get campaign requests |
-| GET | `/campaign-requests/:id` | Get one request |
-| PUT | `/campaign-requests/:id` | Update request / accept / reject |
-| DELETE | `/campaign-requests/:id` | Delete request |
-| GET | `/tasks` | Get tasks |
-| POST | `/tasks` | Create task |
-| PUT | `/tasks/:id` | Update task |
-| DELETE | `/tasks/:id` | Delete task |
-| GET | `/clients` | Get clients |
-| GET | `/clients/:id` | Get one client |
-| PUT | `/clients/:id` | Update client |
-| DELETE | `/clients/:id` | Delete client |
+
+
+| Path | Component | Notes |
+|---|---|---|
+| `/dashboard` | `AgencyDashboard` | View agency activities and overview |
+| `/campaign-requests` | `CampaignRequests` | View and manage client campaign requests |
+| `/campaign-requests/:id` | `CampaignRequestDetails` | View request details and accept or reject |
+| `/campaigns` | `Campaigns` | View and manage campaigns |
+| `/campaigns/:id` | `CampaignDetails` | View campaign details and progress |
+| `/tasks` | `Tasks` | View and manage agency tasks |
+| `/tasks/:id` | `TaskDetails` | View and update task details |
+| `/tasks/create` | `CreateTask` | Create and assign a task |
+| `/outsource-requests` | `OutsourceRequests` | View and manage outsource requests |
+| `/outsource-requests/:id` | `OutsourceRequestDetails` | View outsource request details |
+| `/reports` | `Reports` | View campaign and task reports |
+| `/profile` | `Profile` | View and manage agency staff profile |
+
+### Outsource partners routes
+
+| Path | Component | Access | Notes |
+|---|---|---|---|
+| `/outsource-dashboard` | `OutsourceDashboard` | outsource | Dashboard with task overview, search, earnings, and deadlines |
+| `/profile` | `OutsourceProfile` | outsource | View/edit agency profile and service availability |
+| `/outsource/profile` | `OutsourceProfile` | outsource | Alternate route for outsource profile |
+| `/outsource-tasks` | `OutsourceAllTasks` | outsource | View all assigned tasks |
+| `/outsource/tasks` | `OutsourceAllTasks` | outsource | Alias route for task list |
+| `/outsource-tasks/:taskId` | `OutsourceTasksView` | outsource | View task details, accept or reject work |
+| `/outsource-tasks/:taskId/updates` | `OutsourceTaskUpdates` | outsource | Add and review task updates |
+
+## Component hierarchy
+### Client Components
+
+<div align="center">
+  <img src="./images/assets/client_pages_full_hierarchy.png" alt="client pages full hierarchy" width="700">
+</div>
+
+### Agency Components
+![MarkAura ERD](images/assets/compAgency.png)
+
+### OutSource Components
 
 ### Admin routes
 
@@ -258,9 +459,19 @@ Check out the wireframes sketching out layout and flow of the app covering the s
 | GET | `outsource/tasks/:id` | outsource (assigned only) | `200 OK` | `403` not assigned · `404` not found | Backs the task detail view; campaign is populated with limited fields only (e.g. `title`, `deadline`) — never full campaign details |
 | PUT | `outsource/tasks/:id/status` | outsource (assigned only) | `200 OK` | `400` invalid status transition · `403` not assigned · `404` not found | Moves the task through its status enum (e.g. `in_progress` → `submitted` → `revisions_requested` → `completed`) |
 
+
 ## Future Features
 
 - A client-facing campaign review/approval step (approve, request changes, leave feedback) before a campaign goes live
+
+- Staff departments with a manager to assign tasks to staff/outsource
+- In-app notifications when a request is accepted/rejected, a task is assigned, or a campaign is completed
+- File/asset uploads on campaign requests and tasks (briefs, deliverables)
+- Search and filtering across requests, campaigns, and tasks on the staff dashboard
+- Payment and payout tracking for outsourced work, including due amounts, completed payouts, and outstanding invoices
+- A formal task lifecycle and QA review flow, where outsourced work can move from accepted to in progress to delivered and then be reviewed before final completion
+- Partner performance analytics to track completion rates, turnaround times, rejection trends, and overall contribution across campaigns
+
 - Staff departments with manager to assign tasks to staff/outsource
 - In-app notifications when a request is accepted/rejected, a task is assigned, or a campaign is completed
 - File/asset uploads on campaign requests and tasks (briefs, deliverables)
