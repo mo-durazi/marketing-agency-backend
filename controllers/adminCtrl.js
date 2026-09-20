@@ -31,10 +31,18 @@ const createUser = async (req, res) => {
         });
 
         if (role === "staff") {
-            await Staff.create({
-                userId: user._id,
-                specialty: req.body.specialty,
-            });
+            try {
+                await Staff.create({
+                    userId: user._id,
+                    specialty: req.body.specialty,
+                });
+            } catch (staffErr) {
+                // Roll back the user creation to avoid a ghost user with no staff profile
+                await User.findByIdAndDelete(user._id);
+                return res.status(400).json({
+                    err: `Failed to create staff profile: ${staffErr.message}`
+                });
+            }
         }
 
         if (role === "outsource") {
